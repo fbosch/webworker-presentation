@@ -16,11 +16,16 @@ _paginate: false
 
 ---
 
-## Prerequisite
+![bg](#222)
+![](#fff)
+
+## Prerequisites
 
 - JavaScript is a single-threaded language with asynchronous capabilities
+- Workers are scripts that run in a separate thread
 - Web Workers are a part of the [Living Standard](https://html.spec.whatwg.org/multipage/workers.html#workers)
-- ... they have existed for quite a while, but they are still not widely used
+- They are widely supported
+- ... and they have existed for quite a while, but they are not used very often by developers
 
 ---
 
@@ -67,7 +72,7 @@ worker.postMessage("foo");
 
 # Limitations
 
-Workers run in another context than the main thread, therefore they do not have access to —
+Since workers run seperately from the main thread, they do not have access to —
 
 - `DOM`
 - `window`
@@ -83,7 +88,7 @@ Workers run in another context than the main thread, therefore they do not have 
 - Spawn other Web Workers
 - Import & use libraries
 
-— most things that to do not make use of non thread-safe features
+— most things that do not make use of non thread-safe features
 
 ---
 
@@ -96,7 +101,12 @@ Workers run in another context than the main thread, therefore they do not have 
 
 ---
 
+![bg](#0a0423)
+![](#fff)
+
 # [Demo](http://localhost:1234)
+
+fbosch/webworker-example
 
 ---
 
@@ -126,6 +136,8 @@ Workers run in another context than the main thread, therefore they do not have 
 
 ---
 
+![bg](#7d658a)
+![](#fff)
 ![bg 90%](./assets/comlink.png)
 
 ---

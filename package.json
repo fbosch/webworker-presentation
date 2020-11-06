@@ -6,7 +6,7 @@
   "author": "Frederik Bosch <frede.bosch@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "marp -ps .",
+    "start": "marp -s .",
     "deck": "marp --no-stdin PITCHME.md -o ./dist/index.html && cpy \"assets/**/*\" dist/assets",
     "build": "rimraf dist && npm run -s deck"
   },
